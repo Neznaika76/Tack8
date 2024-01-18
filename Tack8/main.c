@@ -2,7 +2,7 @@
 //  Задание 1
 //
 
-#include <stdio.h>
+
 
 void sort_array(int arr[], int n)
 {
@@ -103,6 +103,22 @@ void change_max_min(int size, int a[])
     a[PosMin] = a[PosMax];
     a[PosMax] = temp;
 }
+
+
+//
+//  Задание 6
+//
+
+int diag_avg(int** a, int rows, int cols)
+{
+int sum = 0;
+    for (int i = 0; i < cols; i++)
+        sum += a[i][i];
+    return sum / cols;
+}
+
+
+#include <stdio.h>
 
 int main(int argc, const char * argv[]) {
     // insert code here...
