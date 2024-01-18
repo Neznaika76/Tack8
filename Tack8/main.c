@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-void SortingArray(int arr[], int n)
+void sort_array(int arr[], int n)
 {
     int i= 0;
     int j = 0;
@@ -21,6 +21,37 @@ void SortingArray(int arr[], int n)
             }
         }
     }
+}
+
+//
+//  Задание 2
+//
+
+void sort_even_odd(int n, int a[])
+{
+    int OddPosition=0;
+    int EvenPosition=0;
+    int odd[n];
+    int even[n];
+    for(int i = 0; i < n; ++i)
+    {
+        if(a[i] % 2)
+            odd[OddPosition++] = a[i];
+        else
+            even[EvenPosition++] = a[i];
+    }
+    for(int i = 0; i < n; ++i)
+    {
+        if (i <= OddPosition) 
+        {
+            a[i] = odd[i];
+        }
+        else
+        {
+            a[i] = even[i];
+        }
+    }
+        return a[];
 }
 
 int main(int argc, const char * argv[]) {
