@@ -51,7 +51,6 @@ void sort_even_odd(int n, int a[])
             a[i] = even[i];
         }
     }
-        return a[];
 }
 
 //
@@ -65,6 +64,19 @@ int find_max_array(int size, int a[])
         if (max < a[i])
             max = a[i];
     return max;
+}
+
+//
+//  Задание 4
+//
+
+int is_two_same(int size, int a[]);
+{
+    for(int i = 0; i < size; i++)
+            for(int j = i + 1; j < size; j++)
+                if (a[i] == a[j])
+                    return 1;
+    return 0;
 }
 
 int main(int argc, const char * argv[]) {
