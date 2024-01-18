@@ -54,6 +54,19 @@ void sort_even_odd(int n, int a[])
         return a[];
 }
 
+//
+//  Задание 3
+//
+
+int find_max_array(int size, int a[])
+{
+    int max=a[0];
+    for (int i = 1; i < size; i++)
+        if (max < a[i])
+            max = a[i];
+    return max;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
