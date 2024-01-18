@@ -1,8 +1,7 @@
 //
 //  Задание 1
 //
-
-
+/*
 
 void sort_array(int arr[], int n)
 {
@@ -116,12 +115,35 @@ int sum = 0;
         sum += a[i][i];
     return sum / cols;
 }
+*/
+//
+//  Задание 7
+//
+
 
 
 #include <stdio.h>
 
+void chess(char c, int n)
+{
+    if (n % 2 != 0)
+        if (c % 2 != 0)
+            printf("BLACK\n");
+        else
+            printf("WHITE\n");
+    else
+    {
+        if (c % 2 == 0)
+            printf("BLACK\n");
+        else
+            printf("WHITE\n");
+    }
+}
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    int n;
+    char c;
+    c = getchar();
+    scanf("%d", &n);
+    chess(c, n);
     return 0;
 }
